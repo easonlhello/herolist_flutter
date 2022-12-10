@@ -11,14 +11,4 @@ class Heroes {
 }
 
 
-// class Team {
-//   final String ename; //105
-//   final String cname; //廉颇
-//   final String title; //正义爆轰
-//
-//   Team({
-//     required this.ename,
-//     required this.cname,
-//     required this.title,
-//   });
-// }
+
