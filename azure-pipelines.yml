@@ -10,13 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: FlutterInstall@0
-  inputs:
-    channel: 'stable'
-    version: 'latest'
-  displayName: '安装sdk'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: FlutterBuild@0
+  inputs:
+    target: 'apk'
+    projectDirectory: './'
+    splitPerAbi: true
+    buildNumber: '0.0.0.1'
+    buildName: '0.0.0.1'
+
